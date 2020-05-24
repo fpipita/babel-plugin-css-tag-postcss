@@ -1,2 +1,2 @@
-# babel-plugin-lit-element-css-tag
+# babel-plugin-lit-css-tag
 Build production ready `css` tagged templates.
