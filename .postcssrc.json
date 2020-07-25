@@ -1,0 +1,7 @@
+{
+  "plugins": {
+    "autoprefixer": {
+      "overrideBrowserslist": ["edge 17, firefox 19, chrome 56"]
+    }
+  }
+}

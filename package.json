@@ -1,0 +1,74 @@
+{
+  "name": "babel-plugin-lit-css-tag",
+  "version": "1.0.0",
+  "description": "Process your css tagged templates with PostCSS.",
+  "main": "./index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha",
+    "lint": "tsc && eslint .",
+    "commit": "git-cz",
+    "changelog": "conventional-changelog-cli -p angular -i CHANGELOG.md -s",
+    "preversion": "npm run lint && npm run test",
+    "version": "npm run changelog && git add CHANGELOG.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fpipita/babel-plugin-lit-css-tag.git"
+  },
+  "keywords": [
+    "babel",
+    "plugin",
+    "lit-html",
+    "lit-element",
+    "css",
+    "tag"
+  ],
+  "author": "Francesco Pipita <francesco.pipita@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fpipita/babel-plugin-lit-css-tag/issues"
+  },
+  "homepage": "https://github.com/fpipita/babel-plugin-lit-css-tag#readme",
+  "dependencies": {
+    "postcss-load-config": "^2.1.0",
+    "uuid": "^8.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "autoprefixer": "^9.8.5",
+    "babel-plugin-tester": "^9.2.0",
+    "commitizen": "^4.1.2",
+    "conventional-changelog-cli": "^2.0.34",
+    "cz-conventional-changelog": "^3.2.0",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "mocha": "^8.0.1",
+    "postcss": "^7.0.32",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.7"
+  },
+  "peerDependencies": {
+    "@babel/core": "7",
+    "postcss": "7"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{json,md}": "prettier --write",
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
