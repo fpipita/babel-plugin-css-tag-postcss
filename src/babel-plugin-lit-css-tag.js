@@ -1,17 +1,16 @@
 import babel from "@babel/core";
 import postcss from "postcss";
 import postcssrc from "postcss-load-config";
-import { v4 as uuidv4 } from "uuid";
 
 const { plugins } = postcssrc.sync();
 const processor = postcss(plugins);
 
-const placeholder = uuidv4();
+const marker = `lit-${Math.random().toString(16).slice(2)}`;
 
 /**
  * @returns {import("@babel/core").PluginObj<import("./types").BabelPluginLitCssTagPluginPass>}
  */
-const plugin = () => {
+export const plugin = () => {
   return {
     name: "babel-plugin-lit-css-tag",
     visitor: {
@@ -28,7 +27,7 @@ const plugin = () => {
          */
         const expressionsById = new Map();
         for (let i = 0; i < path.node.quasi.expressions.length; i++) {
-          const id = `${placeholder}-${i}`;
+          const id = `${marker}-${i}`;
           flattened.push(path.node.quasi.quasis[i].value.raw, id);
           expressionsById.set(id, path.node.quasi.expressions[i]);
         }

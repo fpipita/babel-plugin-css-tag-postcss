@@ -33,8 +33,7 @@
   },
   "homepage": "https://github.com/fpipita/babel-plugin-lit-css-tag#readme",
   "dependencies": {
-    "postcss-load-config": "^2.1.0",
-    "uuid": "^8.2.0"
+    "postcss-load-config": "^2.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
