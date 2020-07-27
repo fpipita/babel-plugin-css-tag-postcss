@@ -1,3 +1,5 @@
+## [1.0.2](https://github.com/fpipita/babel-plugin-css-tag-postcss/compare/v1.0.1...v1.0.2) (2020-07-27)
+
 ## 1.0.1 (2020-07-27)
 
 ### Bug Fixes
