@@ -1,12 +1,12 @@
 import { PluginPass } from "@babel/core";
 
-export interface BabelPluginLitCssTagOptions {
+export interface BabelPluginCssTagPostcssOptions {
   /**
    * Name of the css tag function, defaults to `css`.
    */
   tag?: string;
 }
 
-export type BabelPluginLitCssTagPluginPass = PluginPass & {
-  opts: BabelPluginLitCssTagOptions;
+export type BabelPluginCssTagPostcssPluginPass = PluginPass & {
+  opts: BabelPluginCssTagPostcssOptions;
 };

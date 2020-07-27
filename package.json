@@ -1,8 +1,8 @@
 {
-  "name": "babel-plugin-lit-css-tag",
+  "name": "@fpipita/babel-plugin-css-tag-postcss",
   "version": "1.0.0",
   "description": "Process your css tagged templates with PostCSS.",
-  "main": "./src/babel-plugin-lit-css-tag.js",
+  "main": "./src/babel-plugin-css-tag-postcss.js",
   "type": "module",
   "scripts": {
     "test": "mocha",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fpipita/babel-plugin-lit-css-tag.git"
+    "url": "git+https://github.com/fpipita/babel-plugin-css-tag-postcss.git"
   },
   "keywords": [
     "babel",
@@ -29,9 +29,9 @@
   "author": "Francesco Pipita <francesco.pipita@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fpipita/babel-plugin-lit-css-tag/issues"
+    "url": "https://github.com/fpipita/babel-plugin-css-tag-postcss/issues"
   },
-  "homepage": "https://github.com/fpipita/babel-plugin-lit-css-tag#readme",
+  "homepage": "https://github.com/fpipita/babel-plugin-css-tag-postcss#readme",
   "dependencies": {
     "postcss-load-config": "^2.1.0"
   },

@@ -5,14 +5,14 @@ import postcssrc from "postcss-load-config";
 const { plugins } = postcssrc.sync();
 const processor = postcss(plugins);
 
-const marker = `lit-${Math.random().toString(16).slice(2)}`;
+const marker = `postcss-${Math.random().toString(16).slice(2)}`;
 
 /**
- * @returns {import("@babel/core").PluginObj<import("./types").BabelPluginLitCssTagPluginPass>}
+ * @returns {import("@babel/core").PluginObj<import("./types").BabelPluginCssTagPostcssPluginPass>}
  */
 export const plugin = () => {
   return {
-    name: "babel-plugin-lit-css-tag",
+    name: "babel-plugin-css-tag-postcss",
     visitor: {
       TaggedTemplateExpression(path, state) {
         if (!path.get("tag").isIdentifier({ name: state.opts.tag ?? "css" })) {
