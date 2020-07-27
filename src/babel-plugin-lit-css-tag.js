@@ -11,7 +11,7 @@ const placeholder = uuidv4();
 /**
  * @returns {import("@babel/core").PluginObj<import("./types").BabelPluginLitCssTagPluginPass>}
  */
-export const plugin = () => {
+const plugin = () => {
   return {
     name: "babel-plugin-lit-css-tag",
     visitor: {
@@ -72,3 +72,5 @@ export const plugin = () => {
     },
   };
 };
+
+export default plugin;

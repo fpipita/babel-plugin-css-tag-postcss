@@ -81,6 +81,8 @@ $ npm install --save-dev @fpipita/babel-plugin-lit-css-tag
 
 You also need to have `@babel/core` and `postcss` packages installed and properly configured for your build process.
 
+Note: this package uses `ESM` as its primary packaging format. If you need the `commonjs` package, you can reference it by appending the `/commonjs` suffix to the package name, e.g. `babel-plugin-lit-css-tag/commonjs`.
+
 ## Usage
 
 In your babel configuration, simply add:
@@ -96,6 +98,13 @@ In your babel configuration, simply add:
     ]
   ]
 }
+```
+
+If you're using some build stack that doesn't support `ESM` natively, reference the `commonjs` version of the package:
+
+```diff
+-"babel-plugin-lit-css-tag",
++"babel-plugin-lit-css-tag/commonjs",
 ```
 
 You can **optionally** specify the `tag` option, which is basically the name of the css tag function you use to define the css tagged templates in your code. It defaults to `css` so in most cases you can just forget about it.
