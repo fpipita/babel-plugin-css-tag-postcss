@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
+    "@types/postcss-load-config": "^2.0.1",
     "autoprefixer": "^9.8.5",
     "babel-plugin-tester": "^9.2.0",
     "commitizen": "^4.1.2",
