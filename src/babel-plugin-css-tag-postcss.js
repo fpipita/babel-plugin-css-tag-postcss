@@ -10,7 +10,7 @@ const marker = `postcss-${Math.random().toString(16).slice(2)}`;
 /**
  * @returns {import("@babel/core").PluginObj<import("./types").BabelPluginCssTagPostcssPluginPass>}
  */
-export const plugin = () => {
+const plugin = () => {
   return {
     name: "babel-plugin-css-tag-postcss",
     visitor: {

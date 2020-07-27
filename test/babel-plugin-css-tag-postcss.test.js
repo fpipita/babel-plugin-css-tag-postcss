@@ -1,6 +1,6 @@
 import pluginTester from "babel-plugin-tester";
 import path from "path";
-import { plugin } from "../src/babel-plugin-css-tag-postcss.js";
+import plugin from "../src/babel-plugin-css-tag-postcss.js";
 
 pluginTester.default({
   plugin: plugin,
