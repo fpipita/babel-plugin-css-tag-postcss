@@ -24,7 +24,8 @@
     "lit-html",
     "lit-element",
     "css",
-    "tag"
+    "tag",
+    "postcss"
   ],
   "author": "Francesco Pipita <francesco.pipita@gmail.com>",
   "license": "ISC",
