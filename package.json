@@ -28,6 +28,7 @@
   ],
   "author": "Francesco Pipita <francesco.pipita@gmail.com>",
   "license": "ISC",
+  "private": false,
   "bugs": {
     "url": "https://github.com/fpipita/babel-plugin-css-tag-postcss/issues"
   },
