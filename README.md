@@ -81,7 +81,7 @@ $ npm install --save-dev @fpipita/babel-plugin-css-tag-postcss
 
 You also need to have `@babel/core` and `postcss` packages installed and properly configured for your build process.
 
-Note: this package uses `ESM` as its primary packaging format. If you need the `commonjs` package, you can reference it by appending the `/commonjs` suffix to the package name, e.g. `babel-plugin-css-tag-postcss/commonjs`.
+Note: this package uses `ESM` as its primary packaging format. If you need to reference the `commonjs` package, you can grab it by appending the `/commonjs` suffix to the package name, e.g. `@fpipita/babel-plugin-css-tag-postcss/commonjs`.
 
 ## Usage
 
@@ -91,7 +91,7 @@ In your babel configuration, simply add:
 {
   "plugins": [
     [
-      "babel-plugin-css-tag-postcss",
+      "@fpipita/babel-plugin-css-tag-postcss",
       {
         "tag": "css"
       }
@@ -100,16 +100,16 @@ In your babel configuration, simply add:
 }
 ```
 
-If you're using some build stack that doesn't support `ESM` natively, reference the `commonjs` version of the package:
+If you're using some build stack that doesn't support `ESM` natively, grab the `commonjs` version of the plugin:
 
 ```diff
--"babel-plugin-css-tag-postcss",
-+"babel-plugin-css-tag-postcss/commonjs",
+-"@fpipita/babel-plugin-css-tag-postcss",
++"@fpipita/babel-plugin-css-tag-postcss/commonjs",
 ```
 
 You can **optionally** specify the `tag` option, which is basically the name of the css tag function you use to define the css tagged templates in your code. It defaults to `css` so in most cases you can just forget about it.
 
-The plugin will read and reuse your existing `PostCSS` configuration thanks to the help of the `postcss-load-config` package.
+The plugin will read and reuse your existing `PostCSS` configuration which can be expressed in any of the formats supported by the [postcss-load-config](https://github.com/michael-ciniawsky/postcss-load-config#readme) package.
 
 ## Template literals with embedded expressions
 
