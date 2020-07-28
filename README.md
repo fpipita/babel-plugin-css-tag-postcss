@@ -177,3 +177,7 @@ css`
   }
 `;
 ```
+
+## Known limitations
+
+Due to the sync nature of Babel plugins, only **sync** PostCSS plugins are supported.
