@@ -7,6 +7,6 @@ export interface BabelPluginCssTagPostcssOptions {
   tag?: string;
 }
 
-export type BabelPluginCssTagPostcssPluginPass = PluginPass & {
+export interface BabelPluginCssTagPostcssPluginPass extends PluginPass {
   opts: BabelPluginCssTagPostcssOptions;
 };
