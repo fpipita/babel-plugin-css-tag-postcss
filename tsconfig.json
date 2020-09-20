@@ -66,8 +66,5 @@
     // "skipLibCheck": true,                     /* Skip type checking of declaration files. */
     // "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
   },
-  "include": ["src/**/*.js", "test/babel-plugin-css-tag-postcss.js"],
-  "typeAcquisition": {
-    "enable": true
-  }
+  "include": ["./src/**/*.js", "./test/babel-plugin-css-tag-postcss.js"]
 }

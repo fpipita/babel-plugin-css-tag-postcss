@@ -6,4 +6,3 @@ RUN apt-get update \
   && cp -a /etc/skel/. /root/ \
   && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen \
   && locale-gen
-
