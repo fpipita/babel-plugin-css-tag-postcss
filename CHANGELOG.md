@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/fpipita/babel-plugin-css-tag-postcss/compare/v1.0.3...v2.0.0) (2020-09-20)
+
+### Features
+
+- add support for PostCSS 8 ([ac2e70f](https://github.com/fpipita/babel-plugin-css-tag-postcss/commit/ac2e70fb2a25fb9c2e6a4cfac6dd08858c149024))
+- switch to conditional exports ([466ac22](https://github.com/fpipita/babel-plugin-css-tag-postcss/commit/466ac227244fc90c7e0b2d546e32e4bc6fe6b45a))
+
+### BREAKING CHANGES
+
+- Removed the old cjs specifier "@fpipita/babel-plugin-css-tag-postcss/commonjs",
+  both cjs and esm versions are available through "@fpipita/babel-plugin-css-tag-postcss".
+
 ## [1.0.2](https://github.com/fpipita/babel-plugin-css-tag-postcss/compare/v1.0.1...v1.0.2) (2020-07-27)
 
 ## 1.0.1 (2020-07-27)
