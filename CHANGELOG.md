@@ -1,3 +1,9 @@
+## [2.0.1](https://github.com/fpipita/babel-plugin-css-tag-postcss/compare/v2.0.0...v2.0.1) (2021-03-05)
+
+### Bug Fixes
+
+- don't fail when the number of expressions is greater than 10 ([37995bd](https://github.com/fpipita/babel-plugin-css-tag-postcss/commit/37995bdfb671cbb54a7279af81a6a1094fa15681)), closes [#6](https://github.com/fpipita/babel-plugin-css-tag-postcss/issues/6)
+
 # [2.0.0](https://github.com/fpipita/babel-plugin-css-tag-postcss/compare/v1.0.3...v2.0.0) (2020-09-20)
 
 ### Features
