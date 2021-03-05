@@ -6,7 +6,17 @@ const { plugins } = postcssrc.sync();
 // @ts-ignore
 const processor = postcss(plugins);
 
-const marker = `postcss-${Math.random().toString(16).slice(2)}`;
+/**
+ * @param {Map<string, import("@babel/core").types.Expression | import("@babel/core").types.TSType>} expressionsById
+ * @returns {string}
+ */
+function generateExpressionId(expressionsById) {
+  const id = `postcss-${Math.random().toString(16).slice(2)}`;
+  if (expressionsById.has(id)) {
+    return generateExpressionId(expressionsById);
+  }
+  return id;
+}
 
 /**
  * @returns {import("@babel/core").PluginObj<import("../types").BabelPluginCssTagPostcssPluginPass>}
@@ -24,11 +34,11 @@ const plugin = () => {
          */
         const flattened = [];
         /**
-         * @type {Map<string, import("@babel/core").types.Expression>}
+         * @type {Map<string, import("@babel/core").types.Expression | import("@babel/core").types.TSType>}
          */
         const expressionsById = new Map();
         for (let i = 0; i < path.node.quasi.expressions.length; i++) {
-          const id = `${marker}-${i}`;
+          const id = generateExpressionId(expressionsById);
           flattened.push(path.node.quasi.quasis[i].value.raw, id);
           expressionsById.set(id, path.node.quasi.expressions[i]);
         }
@@ -41,7 +51,7 @@ const plugin = () => {
          */
         const quasis = [];
         /**
-         * @type {import("@babel/core").types.Expression[]}
+         * @type {(import("@babel/core").types.Expression | import("@babel/core").types.TSType)[]}
          */
         const expressions = [];
         let iterator = css;
