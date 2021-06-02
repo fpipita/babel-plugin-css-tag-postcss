@@ -1,3 +1,9 @@
+## [2.0.2](https://github.com/fpipita/babel-plugin-css-tag-postcss/compare/v2.0.1...v2.0.2) (2021-06-02)
+
+### Bug Fixes
+
+- make dependecy on Node >=14 explicit (nullish coalescing op) ([2c0c45e](https://github.com/fpipita/babel-plugin-css-tag-postcss/commit/2c0c45e7c57b086f93cf2216645c9b4ce103c6b1))
+
 ## [2.0.1](https://github.com/fpipita/babel-plugin-css-tag-postcss/compare/v2.0.0...v2.0.1) (2021-03-05)
 
 ### Bug Fixes

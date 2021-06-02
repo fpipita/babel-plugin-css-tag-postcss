@@ -1,6 +1,6 @@
 {
   "name": "@fpipita/babel-plugin-css-tag-postcss",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Process your css tagged templates with PostCSS.",
   "main": "./src/cjs/babel-plugin-css-tag-postcss.js",
   "engines": {
