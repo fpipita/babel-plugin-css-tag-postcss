@@ -9,4 +9,4 @@ export interface BabelPluginCssTagPostcssOptions {
 
 export interface BabelPluginCssTagPostcssPluginPass extends PluginPass {
   opts: BabelPluginCssTagPostcssOptions;
-};
+}

@@ -3,7 +3,7 @@ const postcss = require("postcss");
 const postcssrc = require("postcss-load-config");
 
 const { plugins } = postcssrc.sync();
-// @ts-ignore
+// @ts-expect-error
 const processor = postcss(plugins);
 
 /**
@@ -19,9 +19,9 @@ function generateExpressionId(expressionsById) {
 }
 
 /**
- * @returns {import("@babel/core").PluginObj<import("../types").BabelPluginCssTagPostcssPluginPass>}
+ * @returns {import("@babel/core").PluginObj<import("../types.js").BabelPluginCssTagPostcssPluginPass>}
  */
-const plugin = () => {
+module.exports = function () {
   return {
     name: "babel-plugin-css-tag-postcss",
     visitor: {
@@ -82,5 +82,3 @@ const plugin = () => {
     },
   };
 };
-
-module.exports = plugin;

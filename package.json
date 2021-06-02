@@ -74,6 +74,7 @@
     "*.{json,md,yml,yaml}": "prettier --write",
     "*.js": [
       "prettier --write",
+      "tsc",
       "eslint --fix"
     ]
   },
