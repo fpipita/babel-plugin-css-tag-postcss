@@ -1,3 +1,9 @@
+## [3.0.1](https://github.com/fpipita/babel-plugin-css-tag-postcss/compare/v3.0.0...v3.0.1) (2023-11-14)
+
+### Bug Fixes
+
+- adds postcss-load-config as a dependency ([8d6c71e](https://github.com/fpipita/babel-plugin-css-tag-postcss/commit/8d6c71e1399cc094238cbc7a60d1ed465300fb62))
+
 # [3.0.0](https://github.com/fpipita/babel-plugin-css-tag-postcss/compare/v2.0.2...v3.0.0) (2023-11-14)
 
 ### chore
