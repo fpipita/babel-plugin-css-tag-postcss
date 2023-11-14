@@ -7,6 +7,6 @@ pluginTester.default({
   pluginName: "babel-plugin-css-tag-postcss",
   fixtures: path.join(
     path.dirname(new URL(import.meta.url).pathname),
-    "__fixtures__"
+    "__fixtures__",
   ),
 });
