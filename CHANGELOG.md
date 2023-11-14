@@ -1,3 +1,13 @@
+# [3.0.0](https://github.com/fpipita/babel-plugin-css-tag-postcss/compare/v2.0.2...v3.0.0) (2023-11-14)
+
+### chore
+
+- drops cjs export ([0bcfc23](https://github.com/fpipita/babel-plugin-css-tag-postcss/commit/0bcfc23f0d7511f6e6a0061fd7485ff77750da6d))
+
+### BREAKING CHANGES
+
+- The cjs export was dropped, the package can now only be consumed as an ESM module.
+
 ## [2.0.2](https://github.com/fpipita/babel-plugin-css-tag-postcss/compare/v2.0.1...v2.0.2) (2021-06-02)
 
 ### Bug Fixes
