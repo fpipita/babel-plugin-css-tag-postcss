@@ -41,19 +41,22 @@
   },
   "homepage": "https://github.com/fpipita/babel-plugin-css-tag-postcss#readme",
   "dependencies": {
-    "postcss-load-config": "^4.0.1"
+    "postcss-load-config": "^6.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.5.0",
     "@types/babel__core": "^7.20.4",
     "autoprefixer": "^10.0.0",
     "babel-plugin-tester": "^11.0.4",
     "commitizen": "^4.2.1",
-    "conventional-changelog-cli": "^4.1.0",
+    "conventional-changelog-cli": "^5.0.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.53.0",
+    "eslint": "^9.5.0",
     "eslint-config-prettier": "^9.0.0",
-    "husky": "^8.0.3",
+    "globals": "^15.5.0",
+    "husky": "^9.0.11",
     "lint-staged": "^15.1.0",
     "mocha": "^10.2.0",
     "postcss": "^8.4.31",
