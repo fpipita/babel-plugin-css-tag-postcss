@@ -1,3 +1,5 @@
+## [3.0.3](https://github.com/fpipita/babel-plugin-css-tag-postcss/compare/v3.0.1...v3.0.3) (2024-12-16)
+
 ## [3.0.2](https://github.com/fpipita/babel-plugin-css-tag-postcss/compare/v3.0.1...v3.0.2) (2024-12-16)
 
 ## [3.0.1](https://github.com/fpipita/babel-plugin-css-tag-postcss/compare/v3.0.0...v3.0.1) (2023-11-14)
